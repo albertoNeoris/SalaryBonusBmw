@@ -13,7 +13,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <div class="cabeza container-fluid">
-	<img alt="BMW" src="img/logo2.jpg" height="7%" width="20%">
+	<img alt="BMW" src="res/logo2.jpg" height="7%" width="20%">
 </div>
 </head>
 
@@ -49,24 +49,47 @@
 				<tr>
 					<th><a href="#" data-toggle="tooltip" data-placement=""
 						title="Click on the employee's number to edit the Technical Competences and Behavior values and Behavior values and to add Overall Comments.">Id</a></th>
-					<th>Name</th>
-					<th>Date</th>
-					<th>Actions</th>
+					<th>Employee#</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Category</th>
+					<th>Req. Ev. Periods</th>
+					<th>Ev. Periods</th>
+					<th>Hiring Date</th>
+					<th>Safety</th>
+					<th>Discipline</th>
+					<th>Attendance</th>
+					<th>Behaviour</th>
+					<th>Tech Competences</th>
+					<th>Bonus Eligible</th>
+					<th>Promotion Eligible</th>
+					<th>Promotion Type</th>
+					<th>Next Level</th>
+					<th>Confirm</th>
+					<th>Action</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>prueba</td>
-					<td>prueba</td>
-					<td>prueba</td>
-					<td><button type="button" class="btn btn-info btn-lg"
-							data-toggle="modal" data-target="#myModal">Clic</button></td>
-				</tr>
-				<tr ng-repeat="member in datos">
-					<td>{{member.iduser}}</td>
-					<td>{{member.loginuser}}</td>
-					<td>{{member.idemployee}}</td>
-					<td><button type="button" class="btn btn-info btn-lg"
+					<td>430305</td>
+					<td>Jorge</td>
+					<td>Garza</td>
+					<td>H3E</td>
+					<td>3</td>
+					<td>2</td>
+					<td>12/06/2012</td>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>4</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+					<td>Position</td>
+					<td>H3C</td>
+					<td><button type="button" class="btn" onclick="return confirm('Please review if job vacancies exist for this category before clicking on the confirm button.');">Confirm</button></td>
+					<td><button type="button" class="btn"
 							data-toggle="modal" data-target="#myModal">Clic</button></td>
 				</tr>
 			</tbody>
@@ -150,8 +173,10 @@
 										<option>4</option>
 										<option>5</option>
 									</select>
-									<h4>Does not always show / not consistently show positive behavior in terms of the described criteria.</h4>
+									<p>Does not always show / not consistently show positive <br> behavior in terms of the described criteria.</p>
+									<p align="right"> <a href="#">Click here</a> to view the values description</p>
 									<br>
+									
 								</div>
 								<label class="col-lg-3 previus"><h3>Behavior Comments:</h3></label>
 								<textarea class="form-control area"></textarea>

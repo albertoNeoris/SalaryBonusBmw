@@ -13,7 +13,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <div class="cabeza container-fluid">
-	<img alt="BMW" src="img/logo2.jpg" height="7%" width="20%">
+	<img alt="BMW" src="res/logo2.jpg" height="7%" width="20%">
 </div>
 </head>
 
@@ -22,35 +22,64 @@
 		<h2>My Team</h2>
 		<br>
 		<div class="col-lg-7">
-			<div style="float:left;width: 15%;">
+			<div style="float: left; width: 15%;">
 				<label for="lang">Quarter: </label>
 			</div>
-			<div style="float:left;width: 30%;">
-				<select name="quarter1" class="form-control" id="quarter1" ng-model="quarter1">
+			<div style="float: left; width: 30%;">
+				<select name="quarter1" class="form-control" id="quarter1"
+					ng-model="quarter1">
 					<option value="qua">Jan-18 to March-18</option>
 				</select>
 			</div>
 		</div>
 	</div>
 	<div class="container">
-		<br><br>
+		<br> <br>
 		<table class="table table-bordered">
 			<thead>
 				<tr>
-					<th>Id User</th>
-					<th>Activo</th>
-					<th>Id Employee</th>
-					<th>Id Role</th>
-					<th>Ultimo Acceso</th>
+					<th>Employee#</th>
+					<th>Name</th>
+					<th>Technology</th>
+					<th>Category</th>
+					<th>Req. Ev. Periods</th>
+					<th>Ev. Periods</th>
+					<th>Supervisor</th>
+					<th>Hiring Date</th>
+					<th>Seniority</th>
+					<th>Time in Level</th>
+					<th>Tech Comp</th>
+					<th>Safety</th>
+					<th>Comments</th>
+					<th>Discipline</th>
+					<th>Comments</th>
+					<th>Attendance</th>
+					<th>Comments</th>
+					<th>Behavior</th>
+					<th>Comments</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="member in datos">
-					<td>{{member.iduser}}</td>
-					<td>{{member.active}}</td>
-					<td>{{member.idemployee}}</td>
-					<td>{{member.role.idrol}}</td>
-					<td>{{member.lastaccess}}</td>
+				<tr>
+					<td>430305</td>
+					<td>Jorge Garza</td>
+					<td>TN-3</td>
+					<td>H3E</td>
+					<td>3</td>
+					<td>1</td>
+					<td>Roberto Figueroa</td>
+					<td>5/15/17</td>
+					<td>0 years\r 6 months\r 22 days</td>
+					<td>0 years\r 3 months\r 11 days</td>
+					<td>4</td>
+					<td>1</td>
+					<td>5/15/17</td>
+					<td>Info from Safety system 1</td>
+					<td>1</td>
+					<td>Info from Discipline system</td>
+					<td>1</td>
+					<td>Info from Attendance system</td>
+					<td>0</td>
 				</tr>
 			</tbody>
 		</table>
