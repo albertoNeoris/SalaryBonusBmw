@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Reports</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="js/lib/script.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="cabeza container-fluid">
+			<img alt="BMW" src="img/logo_bmw.png" class="img-responsive img-fluid">
+</div>	
+</head>
+<body>
+	<div class="container">
+			<div class="panel-body">
+				<hr>
+					<div class="row">
+						<div class="form-group text-center col-lg-1">										
+							<a href=""><span class="fa fa-file-text fa-3x" style="color:#000" aria-hidden="true"></span></a><br>
+							<label>Reports</label>
+						</div>
+						
+						<div class="col-md-offset-1">
+							<br/><br/><br/>
+							<b>&nbsp;&nbsp;&nbsp;&nbsp;Report: </b>	
+							&nbsp;
+							<select>
+								<option></option>
+								<option>Employee Scores</option>
+								<option>Becate Balance</option>
+								<option>Category Changes</option>
+								<option>Blue Collar Status</option>
+								<option>Feedback Letter (PDF)</option>
+							</select><br/><br/>
+						</div>
+
+						<div class="row">
+							<div class="col-md-offset-2 panel panel-default">
+								<br/>
+								<form class="form-horizontal">
+									<div class="form-group">
+										<b class="col-sm-2 control-label">Employee#:</b>
+										<div class="col-sm-2">
+											<input class="form-control" type="text" name="Employee">
+										</div>										
+										<div class="col-sm-2">
+											<a href="">Import Spreadsheet</a>
+										</div>	
+										<div class="col-md-4 col-sm-12">
+											<fieldset>    	
+												<legend class="text-center">Include Only</legend>
+												<div class="panel panel-default">
+													<div class="panel-body">
+														<input type="checkbox" >Safety Issue<br/>
+														<input type="checkbox" >Unjustified Absence<br/>
+														<input type="checkbox" >Warnings<br/>
+														<input type="checkbox" >Behavior Issue
+													</div>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<b class="col-sm-2 control-label">Quarter: </b>
+										<div class="col-sm-3">
+											<select class="form-control">
+												<option></option>
+												<option>Jan - Mar 2018</option>
+												<option>Oct - Dec 2017</option>
+												<option>Jul - Sep 2017</option>
+											</select><br/>
+										</div>
+									</div>
+									<div class="form-group">
+										<b class="col-sm-2 control-label">Org. Unit: </b>
+										<div class="col-sm-3">
+											<select class="form-control">
+												<option></option>
+												<option>TN-1</option>
+												<option>TN-2</option>
+												<option>TN-3</option>
+												<option>TN-12</option>
+												<option>TN-25</option>
+											</select><br/>
+										</div>
+									</div>
+									<div class="form-group">
+										<b class="col-sm-2 control-label">Tech Comp </b>
+										<div class="col-sm-3">
+											<select class="form-control">
+												<option></option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select><br/><br/><br/><br/>
+										</div>
+									</div>
+									<div class="form-group">
+										<b class="col-sm-2 control-label">Hiring Date: </b>
+										<div class="col-sm-2">
+											<div class='input-group date' id='datetimepicker1'>
+												<input class="form-control" type="text" placeholder="     /     / ">
+												<span class="input-group-addon">
+	                        						<span class="glyphicon glyphicon-calendar"></span>
+                   								</span>	
+                							</div>
+										</div>
+										<div class="col-md-offset-10">
+											<button class="btn">Generate</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+			</div>
+	</div>	
+</body>
+</html>

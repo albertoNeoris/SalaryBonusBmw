@@ -1,0 +1,190 @@
+<html ng-app="app">
+<head>
+<meta charset="ISO-8859-1">
+<title>Evaluations ProyectoBMW</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/angular.min.js"></script>
+<script src="js/script.js"></script>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<div class="cabeza container-fluid">
+	<img alt="BMW" src="img/logo2.jpg" height="7%" width="20%">
+</div>
+</head>
+
+<body ng-controller="myangularController">
+	<div class="container">
+		<h2>Evaluations</h2>
+		<h5>Quarter: 1 Year: 2018</h5>
+		<br>
+
+		<div class="col-lg-7">
+
+			<div style="float: left; width: 15%;">
+				<label for="lang">Quarter: </label>
+			</div>
+			<div style="float: left; width: 30%;">
+				<select name="quarter1" class="form-control" id="quarter1"
+					ng-model="quarter1">
+					<option value="qua">Jan-18 to March-18</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-5">
+				<a href="#">Click Me to view the Category table</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<br> <br>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th><a href="#" data-toggle="tooltip" data-placement=""
+						title="Click on the employee's number to edit the Technical Competences and Behavior values and Behavior values and to add Overall Comments.">Id</a></th>
+					<th>Name</th>
+					<th>Date</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>prueba</td>
+					<td>prueba</td>
+					<td>prueba</td>
+					<td><button type="button" class="btn btn-info btn-lg"
+							data-toggle="modal" data-target="#myModal">Clic</button></td>
+				</tr>
+				<tr ng-repeat="member in datos">
+					<td>{{member.iduser}}</td>
+					<td>{{member.loginuser}}</td>
+					<td>{{member.idemployee}}</td>
+					<td><button type="button" class="btn btn-info btn-lg"
+							data-toggle="modal" data-target="#myModal">Clic</button></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog" id="mdialTamanio">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Evaluation for Jorge Garza</h4>
+
+						<form class="form-horizontal" role="form">
+
+							<form class="form-horizontal" role="form">
+								<div class="form-group">
+									<label class="col-lg-1 control-label">Employee:</label> <label
+										class="col-lg-3 control-label">Jorge Garza</label> <label
+										class="col-lg-2 control-label">Hiring Date:</label> <label
+										class="col-lg-3 control-label">12/Jun/2017</label>
+
+								</div>
+								<div class="form-group">
+									<label class="col-lg-1 control-label">Employee#:</label> <label
+										class="col-lg-3 control-label">440392</label> <label
+										class="col-lg-2 control-label">Seniority:</label> <label
+										class="col-lg-4 control-label">0 years 6 months 3 days</label>
+
+								</div>
+								<div class="form-group">
+									<label class="col-lg-1 control-label">Supervisor:</label> <label
+										class="col-lg-3 control-label">Luis Anagel Cervantes</label> <label
+										class="col-lg-2 control-label">Time in Level:</label> <label
+										class="col-lg-4 control-label">0 years 6 months 3 days</label>
+								</div>
+
+								<div class="form-group">
+									<label class="col-lg-1 control-label">Technology:</label>
+									<div class="col-lg-10">
+										<label class="col-lg-3 control-label">TN-3</label>
+									</div>
+								</div>
+							</form>
+
+						</form>
+
+
+					</div>
+					<div class="modal-body">
+						<p>Some text in the modal.</p>
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#menu1">Safety</a></li>
+							<li><a data-toggle="tab" href="#menu2">Attendance</a></li>
+							<li><a data-toggle="tab" href="#menu3">Discipline</a></li>
+							<li><a data-toggle="tab" href="#menu4">Behaviour</a></li>
+							<li><a data-toggle="tab" href="#menu5">Tech Competencies</a></li>
+							<li><a data-toggle="tab" href="#menu6">Overall Comments</a></li>
+						</ul>
+
+						<div class="tab-content">
+							<div id="menu1" class="tab-pane fade in active">
+								<p>Safety Value: 1</p>
+								<p>Safety Comments: The employee had a safety warning on
+									23/nov/2017</p>
+							</div>
+							<div id="menu2" class="tab-pane fade">
+								<h3>Menu 1</h3>
+								<p>Some content in menu 1.</p>
+							</div>
+							<div id="menu3" class="tab-pane fade">
+								<h3>Menu 2</h3>
+								<p>Some content in menu 2.</p>
+							</div>
+							<div id="menu4" class="tab-pane fade">
+								<div class="form-group">
+									<label class="col-lg-2"><h3>Behavior: </h3></label> <select class="form-control col-lg-1 ancho">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									<h4>Does not always show / not consistently show positive behavior in terms of the described criteria.</h4>
+									<br>
+								</div>
+								<label class="col-lg-3 previus"><h3>Behavior Comments:</h3></label>
+								<textarea class="form-control area"></textarea>
+							</div>
+							<div id="menu5" class="tab-pane fade">
+								<div class="form-group">
+									<label class="col-lg-4 control-label"><h3>Tech
+											Competencies:</h3></label> <select class="form-control col-lg-1 ancho">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									<h5>The employee has and makes effective use of all knowledge and abilities required for current function (basis: function description) and is able to perform the work with very little supervision and support.</h5>
+									<br>
+								</div>
+								<label class="col-lg-3 previus"><h4>Previus Rating:</h4></label>
+								<label class="col-lg-1 previus2">2</label>
+							</div>
+							<div id="menu6" class="tab-pane fade">
+								<h3>Overal comments:</h3>
+								<textarea class="form-control" rows="3">The employee has developed good skills and his work is aligned with company's values</textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
