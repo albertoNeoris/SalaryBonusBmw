@@ -32,7 +32,7 @@ app.controller("myangularController", function($scope, $http, $window, $location
 	
 	$scope.desactivaUser = function(user) {
 		user.active="0";
-		$http.put('./webresources/users/'+ user.userid, user).then(function() {
+		$http.put('./webresources/users/status'+ user.iduser, user).then(function() {
 			$window.alert("Usuario Desactivado");
 			$window.location("users.html");
 			console.log(id);

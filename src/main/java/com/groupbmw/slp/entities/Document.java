@@ -2,6 +2,7 @@ package com.groupbmw.slp.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 
 /**
@@ -10,6 +11,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="documents")
+@XmlRootElement
 @NamedQuery(name="Document.findAll", query="SELECT d FROM Document d")
 public class Document implements Serializable {
 	private static final long serialVersionUID = 1L;

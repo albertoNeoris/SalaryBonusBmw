@@ -7,6 +7,7 @@
 		<class>com.groupbmw.slp.entities.Group</class>
 		<class>com.groupbmw.slp.entities.Employee</class>
 		<class>com.groupbmw.slp.entities.Document</class>
+		<class>com.groupbmw.slp.entities.Period</class>
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
     	<shared-cache-mode>NONE</shared-cache-mode>
 		<properties/>

@@ -25,6 +25,7 @@ public class ApplicationConfig extends Application {
         resources.add(com.groupbmw.slp.services.GroupFacadeREST.class);
         resources.add(com.groupbmw.slp.services.RoleFacadeREST.class);
         resources.add(com.groupbmw.slp.services.EmployeeFacadeREST.class);
+        resources.add(com.groupbmw.slp.services.DocumentFacadeREST.class);
     }
 	
 	
