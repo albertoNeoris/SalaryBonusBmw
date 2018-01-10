@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Discounts</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="js/lib/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="cabeza container-fluid">
+	<img alt="BMW" src="res/logo2.jpg" class="img-responsive img-fluid"
+		height="7%" width="20%">
+</div>
+</head>
+<body>
+	<div class="container">
+		<div class="panel-body">
+			<hr>
+			<div class="row">
+				<div class="table-responsive">
+					<div align="right">
+						<button data-toggle="modal" data-target="#Modal1">
+							<span class="glyphicon glyphicon-pencil"
+								style="font-size: 25px; color: black;" aria-hidden="true"></span>
+						</button>
+					</div>
+					<div align="left">
+						<button data-toggle="modal" data-target="#Modal2">Edit
+							Group</button>
+					</div>
+					<br/>
+					<table class="table table-striped table-bordered text-center">
+						<thead>
+							<tr>
+								<th class="text-center" scope="col" style="width: 5%">Select</th>
+								<th class="text-center" scope="col" style="width: 10%">#
+									Employee</th>
+								<th class="text-center" scope="col" style="width: 10%">First
+									Name</th>
+								<th class="text-center" scope="col" style="width: 10%">Last
+									Name</th>
+								<th class="text-center" scope="col" style="width: 10%">Technology</th>
+								<th class="text-center" scope="col" style="width: 20%">Category</th>
+								<th class="text-center" scope="col" style="width: 25%">Supervisor</th>
+								<th class="text-center" scope="col" style="width: 25%">Hiring
+									Date</th>
+								<th class="text-center" scope="col" style="width: 25%">Initial
+									Amount</th>
+								<th class="text-center" scope="col" style="width: 25%">Current
+									Amount</th>
+								<th class="text-center" scope="col" style="width: 25%">Last
+									Modified Date</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row"><input type="radio" name=""></td>
+								<td>430305</td>
+								<td>Daniel</td>
+								<td>Sanchez</td>
+								<td>TN-3</td>
+								<td>H3E</td>
+								<td>Roberto Figueroa</td>
+								<td>5/15/17</td>
+								<td>16000.00</td>
+								<td>4500.00</td>
+								<td>12/12/2017</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="Modal1" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="exampleModalLabel">
+						<b>Jorge Garza</b>
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<form>
+							<div class="form-group">
+								<b class="col-sm-3 control-label">Category: </b>
+								<div class="col-sm-3">H1B</div>
+							</div>
+							<div class="form-group">
+								<b class="col-sm-3 control-label">Initial Amount: </b>
+								<div class="col-sm-3">10000.00</div>
+								<br />
+							</div>
+							<div class="form-group">
+								<b class="col-sm-3 control-label">Hiring Date: </b>
+								<div class="col-sm-3">5/12/17</div>
+							</div>
+							<div class="form-group">
+								<b class="col-sm-3 control-label">Current Amount: </b>
+								<div class="col-sm-3">4500.00</div>
+								<br />
+							</div>
+							<div class="form-group">
+								<b class="col-sm-3 control-label">Daily Wage: </b>
+								<div class="col-sm-3">235.20</div>
+								<br />
+							</div>
+							<div class="form-group">
+								<input type="radio" name="" value="" class="col-sm-1"> <b>Edit
+									Initial Amount:</b> <label style="font-weight: lighter">10000.00</label>
+								<br />
+							</div>
+							<div class="form-group">
+								<input type="radio" name="" value="" class="col-sm-1"> <b>Apply
+									Discount:</b> <select>
+									<option>Select a discount type...</option>
+									<option>Ramp-up Bonus/PTU</option>
+									<option>Christmas Bonus</option>
+									<option>Settlement</option>
+									<option>Saving Fund</option>
+									<option>Other</option>
+								</select> <label style="font-weight: lighter"> = 2000.00</label>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary"
+						data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary">Apply</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="Modal2" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="exampleModalLabel">
+						<b>Discount #5534</b>
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<form>
+							<div class="form-group">
+								<input type="radio" name="" value="" class="col-sm-1"> <b>Initial
+									Amount:</b> <input type="text">
+									<a style="text-decoration: underline;">Download Template</a>
+							</div>
+							<div class="form-group">
+								<input type="radio" name="" value="" class="col-sm-1"> <b>Apply
+									Discount:</b> <select>
+									<option>Select a discount type...</option>
+									<option>Ramp-up Bonus/PTU</option>
+									<option>Christmas Bonus</option>
+									<option>Settlement</option>
+									<option>Saving Fund</option>
+									<option>Other</option>
+								</select> <label style="font-weight: lighter"> = 2000.00</label>
+								<a style="text-decoration: underline;">Download Template</a>
+							</div>
+							<div class="form-group">
+								<input type="file" name="" class="col-sm-9"/>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary"
+						data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary">Apply</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

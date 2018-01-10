@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login ProyectoBMW</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="js/angular.min.js"></script>
+<script src="js/script.js"></script>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body ng-controller="myangularController">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-12">
+								<img alt="BMW" src="res/logos.png">
+								<!-- <a href="#" class="active" id="login-form-link">Login</a> -->
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form id="login-form" method="post" role="form"
+									style="display: block;">
+									<div class="form-group">
+										<label for="lang">Select Language: </label> <select
+											name="language1" class="form-control" id="language1"
+											ng-model="language1" tabindex="1">
+											<option value="English">English</option>
+											<option value="Español">Español</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="lang">Employee Number: </label> <input type="text"
+											name="username1" id="username1" ng-model="user1" tabindex="2"
+											class="form-control" placeholder="Username" value="">
+									</div>
+									<div class="form-group">
+										<label for="lang">Password: </label> <input type="password"
+											name="password1" id="password1" ng-model="pass1" tabindex="3"
+											class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<a tabindex="4" class="form-control btn btn-login"
+													value="Log In" href="admin.html">Log In</a>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
